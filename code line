@@ -1,0 +1,17 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) RimWorld.Planet.DaysWorthOfFoodCalculator.RimWorld.Planet.DaysWorthOfFoodCalculator.ApproxDaysWorthOfFood_Patch2(System.Collections.Generic.List`1<Verse.Pawn>,System.Collections.Generic.List`1<Verse.ThingDefCount>,int,RimWorld.IgnorePawnsInventoryMode,RimWorld.Faction,RimWorld.Planet.WorldPath,single,int,bool)
+  at RimWorld.Planet.DaysWorthOfFoodCalculator.ApproxDaysWorthOfFood (RimWorld.Planet.Caravan caravan) [0x00048] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.Planet.Caravan.get_DaysWorthOfFood () [0x0001f] in <95de19971c5d40878d8742747904cdcd>:0 
+  at RimWorld.Planet.Gizmo_CaravanInfo.GizmoOnGUI (UnityEngine.Vector2 topLeft, System.Single maxWidth, Verse.GizmoRenderParms parms) [0x000af] in <95de19971c5d40878d8742747904cdcd>:0 
+  at Verse.GizmoGridDrawer.DrawGizmoGrid (System.Collections.Generic.IEnumerable`1[T] gizmos, System.Single startX, Verse.Gizmo& mouseoverGizmo, System.Func`2[T,TResult] customActivatorFunc, System.Func`2[T,TResult] highlightFunc, System.Func`2[T,TResult] lowlightFunc) [0x004bc] in <95de19971c5d40878d8742747904cdcd>:0 
+  at (wrapper dynamic-method) RimWorld.InspectGizmoGrid.RimWorld.InspectGizmoGrid.DrawInspectGizmoGridFor_Patch0(System.Collections.Generic.IEnumerable`1<object>,Verse.Gizmo&) currentSelectable: null
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch1 (string)
+Verse.Log:ErrorOnce (string,int)
+(wrapper dynamic-method) RimWorld.InspectGizmoGrid:RimWorld.InspectGizmoGrid.DrawInspectGizmoGridFor_Patch0 (System.Collections.Generic.IEnumerable`1<object>,Verse.Gizmo&)
+RimWorld.Planet.WorldInspectPane:DrawInspectGizmos ()
+RimWorld.InspectPaneUtility:ExtraOnGUI (RimWorld.IInspectPane)
+RimWorld.Planet.WorldInspectPane:ExtraOnGUI ()
+Verse.WindowStack:WindowStackOnGUI ()
+(wrapper dynamic-method) RimWorld.UIRoot_Play:RimWorld.UIRoot_Play.UIRootOnGUI_Patch2 (RimWorld.UIRoot_Play)
+(wrapper dynamic-method) Verse.Root:Verse.Root.OnGUI_Patch2 (Verse.Root)
